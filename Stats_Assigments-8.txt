@@ -1,0 +1,71 @@
+Q1.A crime is committed by one of two suspects, A and B. Initially, there is equal evidence
+against both of them. In further investigation at the crime scene, it is found that the guilty
+party had a blood type found in 10% of the population. Suspect A does match this blood
+type, whereas the blood type of Suspect B is unknown. (a) Given this new information, what
+is the probability that A is the guilty party? (b) Given this new information, what is the
+probability that B’s blood type matches that found at the crime scene?
+
+ANS
+Let's denote the events as follows:
+
+A: Suspect A is guilty.
+B: Suspect B is guilty.
+E: The guilty party has a blood type found in 10% of the population.
+
+We are given the following probabilities:
+
+P(A) = P(B) = 0.5 (initially there is equal evidence against both suspects)
+P(E|A) = 1 (since it is stated that Suspect A matches the blood type found at the crime scene)
+P(E|B) = 0.1 (since the blood type of Suspect B is unknown, there is a 10% chance of matching the blood type found at the crime scene)
+
+(a) We want to find the probability that Suspect A is guilty given that the guilty party has a blood type found in 10% of the population, denoted as P(A|E).
+
+Using Bayes' theorem, we have:
+
+P(A|E) = (P(E|A) * P(A)) / P(E)
+
+To calculate P(E), we can use the law of total probability:
+
+P(E) = P(E|A) * P(A) + P(E|B) * P(B)
+
+Substituting the given values, we have:
+
+P(E) = (1 * 0.5) + (0.1 * 0.5) = 0.5 + 0.05 = 0.55
+
+P(A|E) = (1 * 0.5) / 0.55 ≈ 0.909
+
+Therefore, the probability that Suspect A is guilty, given that the guilty party has a blood type found in 10% of the population, is approximately 0.909 or 90.9%.
+
+(b) We want to find the probability that Suspect B's blood type matches that found at the crime scene, given the new information, denoted as P(E|B).
+
+Using Bayes' theorem, we have:
+
+P(E|B) = (P(B|E) * P(E)) / P(B)
+
+To calculate P(B), we can use the law of total probability:
+
+P(B) = P(B|E) * P(E) + P(B|¬E) * P(¬E)
+
+Since P(B|¬E) is the probability that Suspect B is guilty, given that the guilty party does not have the blood type found at the crime scene, and we initially have equal evidence against both suspects (P(A) = P(B)), we can conclude that P(B|¬E) = P(B) = 0.5.
+
+Therefore, P(B) = P(B|E) * P(E) + P(B|¬E) * P(¬E) = P(B|E) * P(E) + 0.5 * (1 - P(E))
+
+Substituting the given values, we have:
+
+0.5 = P(B|E) * 0.1 + 0.5 * (1 - 0.1)
+
+0.5 = 0.1 * P(B|E) + 0.5 * 0.9
+
+0.5 = 0.1 * P(B|E) + 0.45
+
+0.05 = 0.1 * P(B|E)
+
+P(B|E) = 0.05 / 0.1 = 0.5
+
+Therefore, the probability that Suspect B's blood type matches that found at the crime scene, given the new information, is 0.5 or 50%.
+
+
+
+
+
+

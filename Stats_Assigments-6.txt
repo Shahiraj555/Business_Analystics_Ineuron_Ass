@@ -1,0 +1,46 @@
+Q1.
+ANS
+(a) To find the joint probability mass function (PMF) of X, Y, and Z, we need to consider the number of ways each outcome can occur.
+
+Let's consider one game with n players. Each player independently and randomly chooses between Rock, Scissors, and Paper with equal probabilities.
+
+The number of players who pick Rock is denoted by X, the number of players who pick Scissors is denoted by Y, and the number of players who pick Paper is denoted by Z.
+
+Since there are n players in total, we have X + Y + Z = n.
+
+To find the joint PMF, we need to find the probability of each possible outcome (x, y, z), where x, y, and z are non-negative integers satisfying x + y + z = n.
+
+The number of ways to choose x players out of n to pick Rock is given by the binomial coefficient C(n, x), which is n! / (x! * (n - x)!). Similarly, the number of ways to choose y players out of n to pick Scissors is C(n, y), and the number of ways to choose z players out of n to pick Paper is C(n, z).
+
+Each outcome (x, y, z) occurs with probability (1/3)^(n) since each player independently chooses Rock, Scissors, or Paper with equal probabilities.
+
+Therefore, the joint PMF of X, Y, and Z is:
+
+P(X = x, Y = y, Z = z) = (C(n, x) * C(n, y) * C(n, z)) * (1/3)^(n)
+
+(b) To find the probability that the game is decisive, we need to consider the cases where exactly two of the three choices appear.
+
+Case 1: Rock and Scissors appear.
+In this case, the number of players who pick Rock (X) and the number of players who pick Scissors (Y) are both non-zero, and the number of players who pick Paper (Z) is zero. Therefore, we need to find the probability of (X > 0), (Y > 0), and (Z = 0).
+
+P(Case 1) = P(X > 0, Y > 0, Z = 0)
+
+Case 2: Scissors and Paper appear.
+In this case, the number of players who pick Scissors (Y) and the number of players who pick Paper (Z) are both non-zero, and the number of players who pick Rock (X) is zero. Therefore, we need to find the probability of (X = 0), (Y > 0), and (Z > 0).
+
+P(Case 2) = P(X = 0, Y > 0, Z > 0)
+
+Case 3: Rock and Paper appear.
+In this case, the number of players who pick Rock (X) and the number of players who pick Paper (Z) are both non-zero, and the number of players who pick Scissors (Y) is zero. Therefore, we need to find the probability of (X > 0), (Y = 0), and (Z > 0).
+
+P(Case 3) = P(X > 0, Y = 0, Z > 0)
+
+The probability that the game is decisive is the sum of the probabilities of these three cases:
+
+P(Game is decisive) = P(Case 1) + P(Case 2) + P(Case 3)
+
+(c) To find the probability that the game is decisive for n = 5, we substitute n = 5 into the expressions for P(Case 1), P(Case 2
+
+
+
+

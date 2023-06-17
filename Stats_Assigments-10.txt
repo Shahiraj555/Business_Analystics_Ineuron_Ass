@@ -1,0 +1,55 @@
+Q1.A chicken lays n eggs. Each egg independently does or doesn’t hatch, with probability p of
+hatching. For each egg that hatches, the chick does or doesn’t survive (independently of the
+other eggs), with probability s of survival. Let N ⇠ Bin(n, p) be the number of eggs which
+hatch, X be the number of chicks which survive, and Y be the number of chicks which hatch
+but don’t survive (so X + Y = N). Find the marginal PMF of X, and the joint PMF of X and Y .
+Are they independent?
+
+ANS
+To find the marginal PMF of X (the number of chicks that survive), we need to calculate P(X = k) for each possible value of k.
+
+Let's denote the events as follows:
+H: An egg hatches.
+S: A chick survives.
+
+We are given the following probabilities:
+P(H) = p (probability of an egg hatching)
+P(S|H) = s (probability of a chick surviving given that the egg hatches)
+
+Since each egg hatches or doesn't hatch independently, and each chick's survival is independent of the other chicks, we can model the number of eggs hatching and the number of chicks surviving as independent binomial random variables.
+
+Therefore, X follows a binomial distribution with parameters n and s. The marginal PMF of X is given by:
+
+P(X = k) = C(n, k) * s^k * (1 - s)^(n - k)
+
+where C(n, k) represents the binomial coefficient (n choose k).
+
+To find the joint PMF of X and Y, we need to calculate P(X = k, Y = m) for each possible combination of k and m such that k + m = N.
+
+Since X and Y are defined as the number of chicks surviving and the number of chicks that hatch but don't survive, respectively, we have:
+
+P(X = k, Y = m) = P(X = k, N = k + m)
+
+Using the marginal PMF of X and the binomial PMF of N, we can calculate the joint PMF:
+
+P(X = k, Y = m) = P(N = k + m) * P(X = k | N = k + m)
+
+P(X = k, Y = m) = C(n, k + m) * p^(k + m) * (1 - p)^(n - k - m) * C(k + m, k) * s^k * (1 - s)^(k + m - k)
+
+Simplifying, we have:
+
+P(X = k, Y = m) = C(n, k + m) * p^(k + m) * (1 - p)^(n - k - m) * C(k + m, k) * s^k * (1 - s)^m
+
+To determine if X and Y are independent, we need to check if the joint PMF factors into the product of the marginal PMFs:
+
+P(X = k, Y = m) = P(X = k) * P(Y = m)
+
+If this condition holds for all possible values of k and m, then X and Y are independent.
+
+However, upon examining the joint PMF, we can see that it does not factor into the product of the marginal PMFs. Therefore, X and Y are not independent in this scenario.
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+Q1.For a group of 7 people, find the probability that all 4 seasons (winter, spring, summer, fall)
+occur at least once each among their birthdays, assuming that all seasons are equally likely.
+
+
+Ans
+Let's denote D(i) as the number of derangements where season i occupies its corresponding position. There are four seasons, so we can calculate the number of derangements using the inclusion-exclusion principle as follows:
+
+D(1) = 0 (since season 1 cannot be in its position)
+D(2) = 6! (number of derangements of the remaining six positions)
+D(3) = 5! (number of derangements of the remaining five positions)
+D(4) = 5! (number of derangements of the remaining five positions)
+
+Now, using the inclusion-exclusion principle, we can calculate the number of derangements where none of the seasons occupy their corresponding position:
+
+Number of derangements = 7! - D(1) - D(2) - D(3) - D(4) = 7! - 6! - 5! - 5! - 5!
+
+Finally, we can calculate the probability by dividing the number of derangements by the total number of possible arrangements:
+
+Probability = Number of derangements / 7!
+The probability that all four seasons occur at least once among the birthdays of the seven people is approximately 0.01587301587, or approximately 1.59%.
+
+
+
+

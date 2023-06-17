@@ -1,0 +1,11 @@
+Q1.Is it possible that an event is independent of itself? If so, when?
+
+Ans
+No, it is not possible for an event to be independent of itself.
+ The concept of independence in probability theory refers to the relationship between two or more events. 
+Independence means that the occurrence or non-occurrence of one event does not affect the probability of the occurrence or non-occurrence of another event.
+If an event is independent of itself, 
+it would imply that the occurrence or non-occurrence of the event does not affect its own probability. 
+However, this contradicts the very definition of probability. 
+The probability of an event is determined by considering the information or conditions at hand, including the occurrence or non-occurrence of the event itself. 
+Therefore, an event cannot be independent of itself.

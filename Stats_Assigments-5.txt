@@ -1,0 +1,17 @@
+Consider rolling a fair six-sided die. Let A be the event "the outcome is an even number," B be the event "the outcome is greater than 3," and C be the event "the outcome is 6."
+
+Pairwise Independence:
+
+A and B are independent because the probability of A occurring (3/6) is the same regardless of whether B occurs (as both events have equal probabilities of happening).
+A and C are independent because the probability of A occurring (3/6) is the same regardless of whether C occurs (since C only happens when the outcome is 6, which is an even number).
+B and C are independent because the probability of B occurring (3/6) is the same regardless of whether C occurs (since C only happens when the outcome is 6, which is greater than 3).
+However, the events A, B, and C are not independent. To see this, consider the following:
+
+P(A ∩ B ∩ C) = P(6) = 1/6
+P(A) * P(B) * P(C) = (3/6) * (3/6) * (1/6) = 1/12
+Since P(A ∩ B ∩ C) ≠ P(A) * P(B) * P(C), we can conclude that the events A, B, and C are not independent. In this example, whether event C occurs (the outcome is 6) is completely determined if we know both events A (the outcome is even) and B (the outcome is greater than 3), but it is completely undetermined if we know only one of these events.
+
+
+
+
+

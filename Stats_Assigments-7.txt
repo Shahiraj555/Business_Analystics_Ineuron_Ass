@@ -1,0 +1,42 @@
+Q1Give an example of 3 events A, B, C which are pairwise independent but not independent.
+Hint: find an example where whether C occurs is completely determined if we know whether
+A occurred and whether B occurred, but completely undetermined if we know only one of
+these things.
+
+Ans
+To find the probability that the new email is spam given that it mentions "free money," we can use Bayes' theorem. Let's denote the events as follows:
+
+A: The email is spam.
+B: The email mentions "free money."
+
+We are given the following probabilities:
+
+P(A) = 0.80 (probability of an email being spam)
+P(B|A) = 0.10 (probability of "free money" being mentioned in spam email)
+P(B|¬A) = 0.01 (probability of "free money" being mentioned in non-spam email)
+
+We want to find P(A|B), which is the probability that the email is spam given that it mentions "free money."
+
+Using Bayes' theorem, we have:
+
+P(A|B) = (P(B|A) * P(A)) / P(B)
+
+To calculate P(B), we can use the law of total probability:
+
+P(B) = P(B|A) * P(A) + P(B|¬A) * P(¬A)
+
+P(¬A) represents the probability of an email not being spam, which is equal to 1 - P(A) = 1 - 0.80 = 0.20.
+
+Now, we can substitute the given values into the formulas:
+
+P(B) = (0.10 * 0.80) + (0.01 * 0.20) = 0.08 + 0.002 = 0.082
+
+P(A|B) = (0.10 * 0.80) / 0.082 ≈ 0.975
+
+Therefore, the probability that the new email is spam, given that it mentions "free money," is approximately 0.975 or 97.5%.
+
+
+
+
+
+

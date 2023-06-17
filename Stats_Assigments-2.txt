@@ -1,0 +1,34 @@
+Q2.Let X be a random day of the week, coded so that Monday is 1, Tuesday is 2, etc. (so X takes
+values 1, 2,..., 7, with equal probabilities). Let Y be the next day after X (again represented as
+an integer between 1 and 7). Do X and Y have the same distribution? What is P(X)
+
+Ans
+X and Y do not have the same distribution. Although X takes values 1 to 7 with equal probabilities, the distribution of Y depends on the value of X.
+
+To determine the probability distribution of Y, we need to consider the possible values of X and the corresponding values of Y.
+
+If X is 1 (Monday), then Y can only be 2 (Tuesday).
+
+If X is 2 (Tuesday), then Y can be 3 (Wednesday).
+
+If X is 3 (Wednesday), then Y can be 4 (Thursday).
+
+If X is 4 (Thursday), then Y can be 5 (Friday).
+
+If X is 5 (Friday), then Y can be 6 (Saturday).
+
+If X is 6 (Saturday), then Y can be 7 (Sunday).
+
+If X is 7 (Sunday), then Y can be 1 (Monday).
+
+From this analysis, we can see that Y takes values from 2 to 7 with equal probabilities, but the probability of Y being 1 (Monday) is different. It depends on the value of X. Specifically, if X is 7 (Sunday), the probability of Y being 1 is 1, but for any other value of X, the probability of Y being 1 is 0.
+
+Therefore, the probability distribution of X is as follows:
+
+P(X = 1) = 1/7
+P(X = 2) = 1/7
+P(X = 3) = 1/7
+P(X = 4) = 1/7
+P(X = 5) = 1/7
+P(X = 6) = 1/7
+P(X = 7) = 1/7

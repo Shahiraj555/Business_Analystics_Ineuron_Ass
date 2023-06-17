@@ -1,0 +1,29 @@
+(a) To find the probability that no one has the same seat for both courses, we can use the principle of inclusion-exclusion.
+
+Let's consider the number of ways in which no one has the same seat for Torts and Contracts. The first student has 100 choices for their seat in Torts, and then 99 choices for their seat in Contracts. The second student has 99 choices for their seat in Torts (one seat is already occupied), and then 98 choices for their seat in Contracts. This pattern continues until the 100th student, who has 1 choice for their seat in Torts and 0 choices for their seat in Contracts.
+
+Therefore, the number of ways in which no one has the same seat for both courses is:
+
+100 × 99 × 98 × ... × 1 × 0.
+
+To find the probability, we divide this by the total number of possible seat assignments, which is 100!.
+
+P(no same seat) = (100 × 99 × 98 × ... × 1 × 0) / 100!
+The probability that no one has the same seat for both courses is approximately 0.0000000000000000000000000011452.
+
+(b) To find a simple approximation, we can use the fact that when the number of seats is much larger than the number of students, the probability of no one having the same seat for both courses tends to 1/e (where e is the base of the natural logarithm).
+
+Approximation: P(no same seat) ≈ 1/e ≈ 0.36787944117.
+
+(c) To find the probability that at least two students have the same seat for both courses, we can subtract the probability of no one having the same seat from 1.
+
+P(at least two same seats) = 1 - P(no same seat).
+Using the previous approximation:
+
+P(at least two same seats) ≈ 1 - 0.36787944117 ≈ 0.63212055883.
+
+Therefore, the simple approximation to the probability that at least two students have the same seat for both courses is approximately 0.63212055883.
+
+
+
+
